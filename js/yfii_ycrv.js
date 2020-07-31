@@ -54,7 +54,7 @@ async function main() {
     _print(`                  = ${toDollar(stakedYAmount * YVirtualPrice)}\n`);
 
     // YFII REWARDS
-    _print("======== YFII REWARDS ========")
+    _print("======== YYFI REWARDS ========")
     // _print(" (Temporarily paused until further emission model is voted by the community) ");
     _print(`Claimable Rewards : ${toFixed(earnedYFI, 4)} YYFI = $${toFixed(earnedYFI * YFIIPrice, 2)}`);
     _print(`Weekly estimate   : ${toFixed(rewardPerToken * stakedYAmount, 2)} YFII = ${toDollar(rewardPerToken * stakedYAmount * YFIIPrice)} (out of total ${weekly_reward} YFII)`)
