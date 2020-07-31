@@ -57,7 +57,7 @@ async function main() {
     _print("======== YYFI REWARDS ========")
     // _print(" (Temporarily paused until further emission model is voted by the community) ");
     _print(`Claimable Rewards : ${toFixed(earnedYFI, 4)} YYFI = $${toFixed(earnedYFI * YFIIPrice, 2)}`);
-    _print(`Weekly estimate   : ${toFixed(rewardPerToken * stakedYAmount, 2)} YFII = ${toDollar(rewardPerToken * stakedYAmount * YFIIPrice)} (out of total ${weekly_reward} YFII)`)
+    _print(`Weekly estimate   : ${toFixed(rewardPerToken * stakedYAmount, 2)} YYFI = ${toDollar(rewardPerToken * stakedYAmount * YFIIPrice)} (out of total ${weekly_reward} YFII)`)
     const YFIWeeklyROI = (rewardPerToken * YFIIPrice) * 100 / (YVirtualPrice);
     _print(`Weekly ROI in USD : ${toFixed(YFIWeeklyROI, 4)}%`)
     _print(`APY (unstable)    : ${toFixed(YFIWeeklyROI * 52, 4)}% \n`)
